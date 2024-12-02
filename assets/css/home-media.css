@@ -1,0 +1,170 @@
+@media (min-width: 576px) {
+  .profile-info {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-header h1 {
+    font-size: 4.5rem;
+  }
+  .main-header p {
+    font-size: 2.5rem;
+  }
+
+  .carousel-item p {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-item p {
+    padding: 0 11rem;
+  }
+
+  /* navbar */
+  .offcanvas-body > li > a,
+  .navbar-brand {
+    color: #fff;
+  }
+  .nav-link {
+    font-weight: 600;
+    color: #fff !important;
+  }
+  .navbar-nav .nav-link.active,
+  .nav-link:hover {
+    color: #fff;
+  }
+
+  .nav-link {
+    --bs-navbar-active-color: #fff;
+  }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.3s;
+  }
+  .nav-link.active::after {
+    width: 60%;
+  }
+  .nav-link:hover::after {
+    width: 60%;
+  }
+  li.nav-item.dropdown {
+    position: relative;
+  }
+  li.nav-item.dropdown > ul {
+    display: block;
+    visibility: hidden;
+    transition: 0.3s;
+    position: absolute;
+    top: 150%;
+    opacity: 0;
+    border-radius: 0;
+    min-width: 200px;
+  }
+  li.nav-item.dropdown:hover > ul {
+    top: 110%;
+    visibility: visible;
+    opacity: 1;
+  }
+  .dropdown-item {
+    font-size: 0.875rem;
+    line-height: 1.3125rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #4e4e4e;
+  }
+  .dropdown-item:hover {
+    background: none;
+    color: #0078ff;
+  }
+
+  .btn-group.dropend button {
+    border: 0;
+    background-color: transparent;
+  }
+  .btn-group.dropend ul {
+    border-radius: 0;
+    display: block;
+    visibility: hidden;
+    transition: 0.3s;
+    opacity: 0;
+    left: 80% !important;
+  }
+  li.dropend-li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    left: 100% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  /* navbar */
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  #offcanvasNavbar {
+    position: fixed;
+    top: 30px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+    --bs-offcanvas-bg: transparent;
+  }
+
+  #layer {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .offcanvas-header {
+    z-index: 5;
+    border-color: #fff;
+  }
+
+  .offcanvas-body {
+    z-index: 5;
+    background-color: #fff;
+  }
+
+  button.btn-close {
+    background: none;
+    --bs-btn-close-hover-opacity: 1;
+    --bs-btn-close-opacity: 1;
+  }
+
+  button.btn-close:focus {
+    box-shadow: none;
+  }
+
+  button.btn-close:hover {
+    --bs-btn-close-hover-opacity: 1;
+  }
+
+  i.bi-x {
+    font-size: 28px;
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .inner-profile .row.private > * {
+    width: 50%;
+  }
+}
